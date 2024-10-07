@@ -7,9 +7,6 @@ import pandas as pd
 # Initialize the FastAPI app
 app = FastAPI()
 
-#data
-df = pd.read_csv('../data/data.csv')
-
 # Load the pre-trained model
 model = joblib.load('../Notebooks/credit_scoring_model.pkl')
 
