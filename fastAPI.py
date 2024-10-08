@@ -8,7 +8,7 @@ import pandas as pd
 app = FastAPI()
 
 # Load the pre-trained model
-model = joblib.load('../Notebooks/credit_scoring_model.pkl')
+model = joblib.load('./Notebooks/credit_scoring_model.pkl')
 
 # Define the input data schema using Pydantic
 class CustomerData(BaseModel):
